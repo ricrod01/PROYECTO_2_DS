@@ -29,7 +29,7 @@ FX_ZARJPY,GARCH,0.027214374126904
 US_Stock_OKE_adj_close,SARIMA,0.1114772731416045
 US_Stock_CVX_adj_close,SARIMA,0.0561204727257885
 FX_CADUSD,SARIMA,0.0263584625826641
-US_Stock_CCJ_adj_close,SARFIMA,0.20723221477883888
+US_Stock_CCJ_adj_close,SARFIMA,0.2072322147788388
 US_Stock_GLD_adj_close,no_definido,-1.0
 US_Stock_FCX_adj_close,no_definido,-1.0
 US_Stock_EWY_adj_close,no_definido,-1.0
@@ -80,11 +80,11 @@ US_Stock_VALE_adj_close,no_definido,-1.0
 US_Stock_CLF_adj_close,no_definido,-1.0
 US_Stock_DVN_adj_close,no_definido,-1.0
 US_Stock_ACWI_adj_close,no_definido,-1.0
-FX_GBPUSD,no_definido,-1.0
-US_Stock_X_adj_close,no_definido,-1.0
-US_Stock_MPC_adj_close,no_definido,-1.0
-FX_NOKJPY,no_definido,-1.0
-US_Stock_CVE_adj_close,no_definido,-1.0
+FX_GBPUSD,SARFIMA,0.0332988296454745
+US_Stock_X_adj_close,SARIMA,0.1889745806495694
+US_Stock_MPC_adj_close,SARIMA,0.0934233636425512
+FX_NOKJPY,SARFIMA,0.0290182865623657
+US_Stock_CVE_adj_close,SARIMA,0.18046088894544451
 FX_EURCHF,no_definido,-1.0
 FX_EURJPY,no_definido,-1.0
 US_Stock_NEM_adj_close,no_definido,-1.0
