@@ -99,9 +99,9 @@ US_Stock_EWT_adj_close,SARIMA,0.0866880359327219
 US_Stock_WMB_adj_close,SARIMA,0.0959302360771332
 US_Stock_XOM_adj_close,SARIMA,0.0856769706781619
 US_Stock_KMI_adj_close,GARCH,0.0558366101531865
-US_Stock_SCCO_adj_close,SARFIMA,0.08443074765125862
-FX_AUDUSD,no_definido,-1.0
-US_Stock_IEF_adj_close,no_definido,-1.0
-US_Stock_SPYV_adj_close,no_definido,-1.0
-US_Stock_WPM_adj_close,no_definido,-1.0
-US_Stock_IAU_adj_close,no_definido,-1.0
+US_Stock_SCCO_adj_close,SARFIMA,0.0844307476512586
+FX_AUDUSD,SARIMA,0.0529379144541875
+US_Stock_IEF_adj_close,SARIMA,0.0165470961034435
+US_Stock_SPYV_adj_close,SARFIMA,0.0424981763363087
+US_Stock_WPM_adj_close,GARCH,0.1750014965437275
+US_Stock_IAU_adj_close,GARCH,0.08678235178083435
