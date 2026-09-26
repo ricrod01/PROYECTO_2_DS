@@ -54,7 +54,7 @@ US_Stock_AMP_adj_close,no_definido,-1.0
 US_Stock_CAT_adj_close,no_definido,-1.0
 US_Stock_EOG_adj_close,no_definido,-1.0
 US_Stock_TIP_adj_close,no_definido,-1.0
-US_Stock_MS_adj_close,no_definido,-1.0
+US_Stock_MS_adj_close,GARCH,0.08126321102765545
 FX_NZDUSD,no_definido,-1.0
 US_Stock_JNK_adj_close,no_definido,-1.0
 US_Stock_ENB_adj_close,no_definido,-1.0
