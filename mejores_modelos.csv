@@ -30,7 +30,7 @@ US_Stock_OKE_adj_close,SARIMA,0.1114772731416045
 US_Stock_CVX_adj_close,SARIMA,0.0561204727257885
 FX_CADUSD,SARIMA,0.0263584625826641
 US_Stock_CCJ_adj_close,SARFIMA,0.2072322147788388
-US_Stock_GLD_adj_close,GARCH,0.08738128133301222
+US_Stock_GLD_adj_close,GARCH,0.0873812813330122
 US_Stock_FCX_adj_close,no_definido,-1.0
 US_Stock_EWY_adj_close,no_definido,-1.0
 FX_AUDCAD,no_definido,-1.0
@@ -40,7 +40,7 @@ US_Stock_VGK_adj_close,no_definido,-1.0
 US_Stock_RIO_adj_close,no_definido,-1.0
 FX_EURCAD,no_definido,-1.0
 US_Stock_HL_adj_close,no_definido,-1.0
-US_Stock_TECK_adj_close,no_definido,-1.0
+US_Stock_TECK_adj_close,GARCH,0.1995715083987961
 US_Stock_ALB_adj_close,no_definido,-1.0
 FX_ZARGBP,no_definido,-1.0
 FX_NOKGBP,no_definido,-1.0
