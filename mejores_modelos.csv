@@ -44,7 +44,7 @@ US_Stock_TECK_adj_close,GARCH,0.1995715083987961
 US_Stock_ALB_adj_close,no_definido,-1.0
 FX_ZARGBP,no_definido,-1.0
 FX_NOKGBP,no_definido,-1.0
-FX_NOKEUR,SARFIMA,0.016134196583156568
+FX_NOKEUR,GARCH,0.015896340957799224
 US_Stock_EEM_adj_close,no_definido,-1.0
 US_Stock_DE_adj_close,no_definido,-1.0
 US_Stock_EWZ_adj_close,no_definido,-1.0
