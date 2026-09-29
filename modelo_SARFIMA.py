@@ -1,4 +1,5 @@
 import numpy as np
+from dataclasses import dataclass
 
 def pesos_diferenciacion_fraccional(d, n):
 
@@ -19,6 +20,7 @@ def diferenciacion_fraccional(serie, d):
     return serie_diff
 
 
+@dataclass
 class ModeloSARFIMA:
 
     modelo: object
