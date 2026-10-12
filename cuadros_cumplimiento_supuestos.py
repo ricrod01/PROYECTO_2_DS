@@ -470,50 +470,44 @@ def obtener_predicciones_extremas() -> dict[str, dict]:
 
 
 def graficar_modelos_extremos(resultados: dict[str, dict]):
-    """Compara los valores reales y pronosticados del mejor y peor modelo."""
-    figura, ejes = plt.subplots(2, 1, figsize=(13, 8), sharex=True)
+    """Compara en un solo eje el mejor y el peor modelo."""
+    figura, eje = plt.subplots(figsize=(14, 7))
 
-    for eje, (etiqueta, resultado) in zip(ejes, resultados.items()):
+    for etiqueta, resultado in resultados.items():
+        color_real = "#17365D" if etiqueta == "Mejor modelo" else "#7F1D1D"
+        nombre_corto = resultado["serie"].replace("US_Stock_", "").replace(
+            "_adj_close", ""
+        )
         eje.plot(
             resultado["date_id"],
             resultado["real"],
-            color="#222222",
-            linewidth=1.8,
-            label="Valor real",
+            color=color_real,
+            linewidth=2.0,
+            label=f"{nombre_corto} real ({etiqueta.lower()})",
         )
         eje.plot(
             resultado["date_id"],
             resultado["prediccion"],
             color=resultado["color"],
-            linewidth=1.8,
+            linewidth=2.2,
             linestyle="--",
-            label="Predicción",
-        )
-        eje.set_title(
-            f"{etiqueta}: {resultado['familia']} - {resultado['serie']}",
-            fontsize=12,
-            fontweight="bold",
-        )
-        eje.set_ylabel("Valor logarítmico")
-        eje.grid(alpha=0.25)
-        eje.legend(loc="best")
-        eje.text(
-            0.99,
-            0.05,
-            f"RMSE = {resultado['rmse']:.5f}",
-            transform=eje.transAxes,
-            ha="right",
-            va="bottom",
-            bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "#AAAAAA"},
+            label=(
+                f"{nombre_corto} predicción {resultado['familia']} "
+                f"(RMSE={resultado['rmse']:.5f})"
+            ),
         )
 
-    ejes[-1].set_xlabel("date_id (conjunto de prueba)")
-    figura.suptitle(
-        "Comparación del mejor y peor modelo",
+    eje.set_title(
+        "Mejor y peor modelo en el mismo gráfico",
         fontsize=16,
         fontweight="bold",
+        pad=14,
     )
-    figura.tight_layout(rect=(0, 0, 1, 0.96))
+    eje.set_xlabel("date_id (conjunto de prueba)")
+    eje.set_ylabel("Valor logarítmico")
+    eje.grid(alpha=0.25)
+    eje.legend(loc="lower left", frameon=True, framealpha=0.95)
+    figura.tight_layout()
     return figura
 
 
@@ -554,7 +548,7 @@ def guardar_resultados(
 
     figura_extremos = graficar_modelos_extremos(extremos)
     figura_extremos.savefig(
-        directorio / "comparacion_mejor_peor_modelo.png",
+        directorio / "comparacion_mejor_peor_mismo_plot.png",
         dpi=200,
         bbox_inches="tight",
     )
