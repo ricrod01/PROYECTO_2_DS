@@ -1,0 +1,8 @@
+﻿Supuesto,Evaluados,Cumplen,No cumplen,Cumplimiento (%)
+Media cero,25,22,3,88.0
+Sin autocorrelación lineal,25,21,4,84.0
+Sin autocorrelación en cuadrados,25,15,10,60.0
+Sin efecto ARCH remanente,25,20,5,80.0
+Distribución adecuada,25,21,4,84.0
+Convergencia,25,20,5,80.0
+Persistencia menor que uno,25,25,0,100.0
