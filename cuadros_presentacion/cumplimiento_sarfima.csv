@@ -1,0 +1,7 @@
+﻿Supuesto,Evaluados,Cumplen,No cumplen,Cumplimiento (%)
+Media cero,29,25,4,86.20689655172414
+Residuos como ruido blanco,29,3,26,10.344827586206897
+Normalidad,29,0,29,0.0
+Homocedasticidad,29,0,29,0.0
+Estacionariedad (ADF y KPSS),29,0,29,0.0
+Estabilidad de raices,29,29,0,100.0
